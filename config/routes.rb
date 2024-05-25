@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Defines the root path route ("/")
-  # root "articles#index"
+  get 'messages/index'
+  root to: "messages#index"
+  #ルートパスへのアクセスがあったらmessages_controllerのindexアクションが呼び出される
+  
 end
